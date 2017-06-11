@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>裁切的应用</title>
+	<style>
+		* {
+		  margin:0;
+		  padding: 0;
+		}	
+		#wrapper {
+		  position: relative;
+		  width:432px;
+		  height: auto;
+		  margin:50px auto;
+		  list-style: none;
+		}	
+		#wrapper li {
+		  width: 128px;
+		  height: 128px;
+		  float: left;
+		  position: relative;
+		  border: 1px solid #ccc;
+		  margin:0px 5px;
+		}	
+		.icons {
+			position:absolute;
+			top:0px;
+			left:0px;
+
+		}
+		.happy{
+			clip: rect(0 128px 128px 0);
+		}
+		.sad {
+			left:-128px;/*需向左偏移一个图片位置*/
+			clip: rect(0 256px 128px 128px);
+		}
+		.angry {
+			left:-256px;/*需向左偏移两个图片位置*/
+			clip: rect(0 384px 128px 256px);
+		}
+		
+	</style>
+</head>
+<body>
+	<ul id="wrapper">
+		<li><img src="images/icons.png" class="icons happy"></li>
+		<li><img src="images/icons.png" class="icons sad" ></li>
+		<li><img src="images/icons.png" class="icons angry"></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+ <head>  
+  <title>绝对定位——块级框</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+  .mybody{
+     width:500px;
+     height:450px;
+     margin:50px;
+     background-color:#ff0;  
+     position:absolute;
+  }
+  .p1{
+     width:200px;
+     height:200px;
+     background-color:#f20;
+     position:absolute;
+     left:50px;
+     top:50px;
+  }
+  .p2{
+     width:200px;
+     height:200px;
+     background-color:#0f0;
+     position:absolute;
+     left:100px;
+     top:100px;
+  }
+  .p3{
+     width:200px;
+     height:200px;
+     background-color:#0ff;
+     float:left;
+  }
+  .p4{
+     width:200px;
+     height:200px;
+     background-color:#f0f;
+     float:left;
+  }
+  </style>
+ </head>
+ <body>
+  <div class="mybody">
+  	<span class="p1">p1</span>
+    <div class="p2">p2</div>
+    <span class="p3">p3</span>
+    <div class="p4">p4</div>
+  </div>
+ </body>
+</html>

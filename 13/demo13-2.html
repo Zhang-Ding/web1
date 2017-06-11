@@ -1,0 +1,44 @@
+<html>
+<head>  
+  <title>绝对定位——父元素</title>
+  <meta charset="utf-8" />
+  <style type="text/css">
+    .mybody{
+         width:500px;
+         height:450px;
+         margin-left:200px;
+         margin-top:50px;
+         background-color:#ff0;/*黄色*/
+    }
+    .p1{
+         width:200px;
+         height:200px;
+         background-color:#f00;/*红色*/
+         /*position:absolute;
+         left:0px;
+         top:0px;*/
+    }
+    .p2{
+         width:200px;
+         height:200px;
+         background-color:#0f0;/*绿色*/
+         position:absolute;
+         left:100px;
+         top:100px;
+    }
+    .p3{
+         width:200px;
+         height:200px;
+         background-color:#0ff;/*紫色*/
+    }
+  </style>
+</head>
+<body>
+  <div class="mybody">
+    <div class="p1">p1
+        <div class="p2">p2</div>
+        <div class="p3">p3</div>
+    </div>
+  </div>
+</body>
+</html>
